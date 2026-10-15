@@ -4,6 +4,16 @@ An end-to-end Natural Language Processing (NLP) and Machine Learning project tha
 The project leverages TF-IDF vectorization with n-grams and a Linear Support Vector Classifier (LinearSVC),
 optimized using 5-fold cross-validation and hyperparameter tuning.
 
+### 🌟 Additional Key Features
+
+* **Visual Model Evaluation (Confusion Matrix & ROC-AUC Curve):**
+  * **Confusion Matrix Display:** Provides a heatmap visualization showing the distribution of true vs. false predictions across Ham and Spam classes.
+  * **ROC-AUC Analysis:** Evaluates classification performance across varying decision thresholds using the model's `decision_function`, computing both the ROC curve and the total AUC score.
+
+* **Interactive Real-Time Testing Prompt:**
+  * Uses dynamic text input (`input()`) to classify custom user SMS messages on demand.
+  * Automatically pipes the entered text through the preprocessing (`clean_text`) and TF-IDF pipeline to display an immediate `[SPAM]` or `[HAM]` verdict.
+
 📌 Project Overview
 
 Unsolicited spam messages present privacy and security risks. This project demonstrates an automated pipeline to detect spam SMS messages using classical machine learning techniques:
